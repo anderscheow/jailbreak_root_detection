@@ -10,7 +10,7 @@ public class SwiftJailbreakRootDetectionPlugin: NSObject, FlutterPlugin {
     }
     
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "jailbreak_root_detection", binaryMessenger: registrar.messenger())
+        let channel = FlutterMethodChannel(name: "jailbreak_root_detection_plus", binaryMessenger: registrar.messenger())
         
         let jailbreakRootDetection = JailbreakRootDetection()
         

@@ -1,13 +1,1 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        google()
-        mavenCentral()
-    }
-    plugins {
-        id 'com.android.library' version "${AGPVersion}"
-        id 'org.jetbrains.kotlin.android' version "${kotlin_version}"
-    }
-}
-
-rootProject.name = 'jailbreak_root_detection'
+rootProject.name = 'jailbreak_root_detection_plus'

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/jailbreak_root_detection.iml" filepath="$PROJECT_DIR$/.idea/jailbreak_root_detection.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/jailbreak_root_detection_android.iml" filepath="$PROJECT_DIR$/android/jailbreak_root_detection_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/jailbreak_root_detection_plus.iml" filepath="$PROJECT_DIR$/.idea/jailbreak_root_detection_plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/jailbreak_root_detection_plus_android.iml" filepath="$PROJECT_DIR$/android/jailbreak_root_detection_plus_android.iml" />
     </modules>
   </component>
 </project>

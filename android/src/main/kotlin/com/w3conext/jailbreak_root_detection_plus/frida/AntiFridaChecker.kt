@@ -1,8 +1,8 @@
-package com.w3conext.jailbreak_root_detection.frida
+package com.w3conext.jailbreak_root_detection_plus.frida
 
 import android.content.Context
 import android.util.Log
-import com.w3conext.jailbreak_root_detection.rooted.SuperUserUtility
+import com.w3conext.jailbreak_root_detection_plus.rooted.SuperUserUtility
 import java.io.BufferedReader
 import java.io.File
 import java.io.InputStreamReader

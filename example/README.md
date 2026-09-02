@@ -1,6 +1,6 @@
-# jailbreak_root_detection_example
+# jailbreak_root_detection_plus_example
 
-Demonstrates how to use the jailbreak_root_detection plugin.
+Demonstrates how to use the jailbreak_root_detection_plus plugin.
 
 ## Getting Started
 

@@ -1,4 +1,4 @@
-package com.w3conext.jailbreak_root_detection.magisk
+package com.w3conext.jailbreak_root_detection_plus.magisk
 
 import java.io.File
 

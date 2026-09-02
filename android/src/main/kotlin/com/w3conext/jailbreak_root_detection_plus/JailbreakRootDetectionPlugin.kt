@@ -1,14 +1,14 @@
-package com.w3conext.jailbreak_root_detection
+package com.w3conext.jailbreak_root_detection_plus
 
 import android.content.Context
 import com.anish.trust_fall.emulator.EmulatorCheck
 import com.anish.trust_fall.externalstorage.ExternalStorageCheck
 import com.anish.trust_fall.rooted.RootedCheck
 import com.scottyab.rootbeer.util.QLog
-import com.w3conext.jailbreak_root_detection.debuger.Debugger
-import com.w3conext.jailbreak_root_detection.devmode.DevMode
-import com.w3conext.jailbreak_root_detection.frida.AntiFridaChecker
-import com.w3conext.jailbreak_root_detection.magisk.MagiskChecker
+import com.w3conext.jailbreak_root_detection_plus.debuger.Debugger
+import com.w3conext.jailbreak_root_detection_plus.devmode.DevMode
+import com.w3conext.jailbreak_root_detection_plus.frida.AntiFridaChecker
+import com.w3conext.jailbreak_root_detection_plus.magisk.MagiskChecker
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
@@ -32,7 +32,7 @@ class JailbreakRootDetectionPlugin : FlutterPlugin, MethodCallHandler {
 
     override fun onAttachedToEngine(flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
         appContext = flutterPluginBinding.applicationContext
-        channel = MethodChannel(flutterPluginBinding.binaryMessenger, "jailbreak_root_detection")
+        channel = MethodChannel(flutterPluginBinding.binaryMessenger, "jailbreak_root_detection_plus")
         channel.setMethodCallHandler(this)
     }
 

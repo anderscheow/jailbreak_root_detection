@@ -1,6 +1,6 @@
 //
 //  ReverseEngineeringChecker.swift
-//  jailbreak_root_detection
+//  jailbreak_root_detection_plus
 //
 //  Created by M on 9/11/2566 BE.
 //

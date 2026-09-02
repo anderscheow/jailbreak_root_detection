@@ -53,6 +53,8 @@
 		BFED1AEC2FA9ADF900ACDE04 /* SwiftJailbreakRootDetectionPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJailbreakRootDetectionPlugin.swift; sourceTree = "<group>"; };
 		BFED1AEF2FA9ADF900ACDE04 /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Package.resolved; sourceTree = "<group>"; };
 		BFED1AF02FA9ADF900ACDE04 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		784666492D4C4C64000A1A5F /* FlutterFramework */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FlutterFramework; path = Flutter/ephemeral/Packages/.packages/FlutterFramework; sourceTree = "<group>"; };
+		78DABEA22ED26510000E7860 /* jailbreak_root_detection_plus */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = jailbreak_root_detection_plus; path = ../../ios/jailbreak_root_detection_plus; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,9 @@
 		9740EEB11CF90186004384FC /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
-				BFED1AF12FA9ADF900ACDE04 /* jailbreak_root_detection */,
+				78DABEA22ED26510000E7860 /* jailbreak_root_detection_plus */,
+				784666492D4C4C64000A1A5F /* FlutterFramework */,
+				BFED1AF12FA9ADF900ACDE04 /* jailbreak_root_detection_plus */,
 				78E0A7A72DC9AD7400C4905E /* FlutterGeneratedPluginSwiftPackage */,
 				3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */,
 				9740EEB21CF90195004384FC /* Debug.xcconfig */,
@@ -160,7 +164,7 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		BFED1AED2FA9ADF900ACDE04 /* jailbreak_root_detection */ = {
+		BFED1AED2FA9ADF900ACDE04 /* jailbreak_root_detection_plus */ = {
 			isa = PBXGroup;
 			children = (
 				BFED1AE72FA9ADF900ACDE04 /* Extension */,
@@ -170,18 +174,18 @@
 				BFED1AEB2FA9ADF900ACDE04 /* ReverseEngineeringChecker.swift */,
 				BFED1AEC2FA9ADF900ACDE04 /* SwiftJailbreakRootDetectionPlugin.swift */,
 			);
-			path = jailbreak_root_detection;
+			path = jailbreak_root_detection_plus;
 			sourceTree = "<group>";
 		};
 		BFED1AEE2FA9ADF900ACDE04 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BFED1AED2FA9ADF900ACDE04 /* jailbreak_root_detection */,
+				BFED1AED2FA9ADF900ACDE04 /* jailbreak_root_detection_plus */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		BFED1AF12FA9ADF900ACDE04 /* jailbreak_root_detection */ = {
+		BFED1AF12FA9ADF900ACDE04 /* jailbreak_root_detection_plus */ = {
 			isa = PBXGroup;
 			children = (
 				BFED1AE52FA9ADF900ACDE04 /* .swiftpm */,
@@ -189,8 +193,8 @@
 				BFED1AEF2FA9ADF900ACDE04 /* Package.resolved */,
 				BFED1AF02FA9ADF900ACDE04 /* Package.swift */,
 			);
-			name = jailbreak_root_detection;
-			path = ../../ios/jailbreak_root_detection;
+			name = jailbreak_root_detection_plus;
+			path = ../../ios/jailbreak_root_detection_plus;
 			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
@@ -399,7 +403,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.w3conext.jailbreakRootDetectionExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.w3conext.jailbreakRootDetectionPlusExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -528,7 +532,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.w3conext.jailbreakRootDetectionExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.w3conext.jailbreakRootDetectionPlusExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -551,7 +555,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.w3conext.jailbreakRootDetectionExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.w3conext.jailbreakRootDetectionPlusExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

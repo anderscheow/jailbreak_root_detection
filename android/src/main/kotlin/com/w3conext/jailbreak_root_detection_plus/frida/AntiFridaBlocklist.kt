@@ -1,4 +1,4 @@
-package com.w3conext.jailbreak_root_detection.frida
+package com.w3conext.jailbreak_root_detection_plus.frida
 
 import android.util.Log
 

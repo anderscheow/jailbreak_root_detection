@@ -1,12 +1,12 @@
-name: jailbreak_root_detection_example
-description: Demonstrates how to use the jailbreak_root_detection plugin.
+name: jailbreak_root_detection_plus_example
+description: Demonstrates how to use the jailbreak_root_detection_plus plugin.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: '>=3.5.0 <4.0.0'
+  sdk: ^3.12.0
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -18,9 +18,9 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jailbreak_root_detection:
+  jailbreak_root_detection_plus:
     # When depending on this package from a real application you should use:
-    #   jailbreak_root_detection: ^x.y.z
+    #   jailbreak_root_detection_plus: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints
     # The example app is bundled with the plugin so we use a path dependency on
     # the parent directory to use the current plugin's version.

@@ -1,4 +1,4 @@
-package com.w3conext.jailbreak_root_detection.rooted
+package com.w3conext.jailbreak_root_detection_plus.rooted
 
 import android.util.Log
 import java.io.BufferedReader

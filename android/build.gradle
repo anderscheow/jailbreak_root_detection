@@ -1,56 +1,58 @@
-buildscript {
-    ext.kotlin_version = '1.8.22'
-}
+group 'com.w3conext.jailbreak_root_detection_plus'
+version '1.0-SNAPSHOT'
 
-plugins {
-    id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
+buildscript {
+    ext.kotlin_version = '2.3.20'
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:9.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
 }
 
 allprojects {
     repositories {
-        gradlePluginPortal()
         google()
         mavenCentral()
     }
 }
 
-group 'com.w3conext.jailbreak_root_detection'
-
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
 
 android {
-    if (project.android.hasProperty("namespace")) {
-        namespace 'com.w3conext.jailbreak_root_detection'
-    }
-
-    compileSdkVersion 34
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
-    }
-
-    kotlinOptions {
-        jvmTarget = "11"
-    }
+    namespace 'com.w3conext.jailbreak_root_detection_plus'
+    compileSdk 36
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
-        //test.java.srcDirs += 'src/test/kotlin'
     }
 
     defaultConfig {
-        minSdkVersion 21
+        minSdk 21
     }
-    lintOptions {
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
         disable 'InvalidPackage'
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
     }
 }
 
 dependencies {
     implementation "androidx.annotation:annotation:1.9.1"
-    implementation 'com.scottyab:rootbeer-lib:0.1.1'
+    implementation 'com.scottyab:rootbeer-lib:0.1.2'
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
 }

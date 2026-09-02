@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:jailbreak_root_detection/jailbreak_root_detection.dart';
+import 'package:jailbreak_root_detection_plus/jailbreak_root_detection_plus.dart';
 
 void main() {
   runApp(const MyApp());
@@ -64,7 +64,7 @@ class _MyAppState extends State<MyApp> {
       }
     }
     if (Platform.isIOS) {
-      const bundleId = 'com.w3conext.jailbreakRootDetectionExample';
+      const bundleId = 'com.w3conext.jailbreakRootDetectionPlusExample';
       final isTampered =
           await JailbreakRootDetection.instance.isTampered(bundleId);
       print('isTampered: $isTampered');

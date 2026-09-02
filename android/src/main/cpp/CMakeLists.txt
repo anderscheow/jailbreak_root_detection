@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.18.1)
 
-project("jailbreak_root_detection")
+project("jailbreak_root_detection_plus")
 
 set(can_use_assembler TRUE)
 
